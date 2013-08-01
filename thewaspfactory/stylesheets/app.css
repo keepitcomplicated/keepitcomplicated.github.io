@@ -2128,7 +2128,7 @@ input {
 .app .header {
   width: 1000px;
   height: 124px;
-  background: url("images/the-wasp-factory.png") no-repeat;
+  background: url("../images/the-wasp-factory.png") no-repeat;
   -webkit-background-size: 1000px 84px;
   -moz-background-size: 1000px 84px;
   background-size: 1000px 84px;
