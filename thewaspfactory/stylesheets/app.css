@@ -2117,7 +2117,7 @@ body {
 }
 body,
 input {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+  font-family: 'Lusitana', Times, "Times New Roman", serif;
   font-weight: 300;
   text-rendering: optimizeLegibility;
 }
@@ -2150,6 +2150,10 @@ input {
 .app .content .footnote {
   font-size: 12px;
   padding-bottom: 40px;
+  font-style: italic;
+}
+.app .content .ben {
+  color: #50e2a3;
 }
 
 
