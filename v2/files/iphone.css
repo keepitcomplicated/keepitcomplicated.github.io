@@ -1,0 +1,109 @@
+#wrap {
+	margin: 30px 0 10px 30px;
+	}
+#indexwrap {
+	margin: 50px 0 10px 50px;
+	}
+#infobox {
+	background: url(../img/aboutbgiphone.png) bottom;
+	width: 380px;
+	height: 170px;
+	margin: 0px 46px 60px 0px;
+	padding: 10px 14px 10px 10px;
+	font-size: 16px;
+	line-height: 18px;
+	}
+#photomat {
+	width: 107px;
+	height: 129px;
+	position: absolute;
+	top: 10px;
+	left: 288px;
+	}
+.item {
+	margin: 0px 26px 26px 0px;
+	}
+.item a:link, .item a:visited {
+	font-size: 14px;
+	color: white;
+	font-weight: normal;
+	}
+img {
+	max-width: 420px;
+	border: 10px white solid;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+img.noborder {
+	max-width: 440px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+.text {
+	width: 410px;
+	padding: 0px 15px 5px 15px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	}
+h2 {
+	font-size: 26px;
+	}
+p, .text a:link, .text a:visited {
+	font-size: 16px;
+	line-height: 20px;
+	}
+.nav {
+	font-size: 18px;
+	}
+.small {
+	color: #333;
+	}
+#infobox .small {
+	font-size: 14px;
+	padding-right: 8px;
+	}
+#xacto {
+	top: 35px;
+	left: 0px;
+	}
+#paperclip {
+	top: 34px;
+	left: 406px;
+	}
+#sharpie {
+	background: url(../img/sharpieiphone.png);
+	width: 259px;
+	height: 197px;
+	position: absolute;
+	top: 950px;
+	left: 0px;
+	}
+#ruler {
+	top: 150px;
+	left: 0px;
+	}
+#rotring {
+	top: 243px;
+	left: 0px;
+	}
+.iphone {
+    display: inline;
+    }
+.regular {
+	display: none;
+	}
+a.iphone {
+    display: inline;
+    }
+a.regular {
+	display: none;
+	}
+.nav {
+	background: #333;
+	padding: 4px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	}
+a.nav {
+	font-weight: bold;
+	}
