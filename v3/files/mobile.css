@@ -1,0 +1,11 @@
+html, body { font-size: 26px; line-height: 30px; }
+
+#wrap { margin-top: 150px; }
+
+#head	{ margin-top: -150px; background: url(#) #e1e1e1; position: absolute; }
+
+.subtitle { display: none; }
+
+.previous, .next { font-size: 1px; color: #e1e1e1; position: absolute; }
+
+.info, .info2 { position: absolute; overflow: visible; }
