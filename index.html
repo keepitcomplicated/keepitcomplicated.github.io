@@ -682,18 +682,19 @@
 
 
   <script src="/js/masonry.pkgd.min.js"></script>
-  <!-- <script src="/js/imagesloaded.pkgd.min.js"></script> -->
   <!-- <script src="/js/livereload.js"></script> -->
   <script type="text/javascript">
-    window.onload = () => {
-      const grid = document.querySelector('.grid');
+    document.addEventListener("DOMContentLoaded", () => {
+      const grid = document.querySelector(".grid");
 
       const masonry = new Masonry(grid, {
-        itemSelector: '.grid-item',
+        itemSelector: ".grid-item",
         gutter: 40,
-        columnWidth: 175
+        columnWidth: 175,
       });
-    };
+
+      grid.classList.add("masonry-loaded");
+    });
   </script>
 
 </body>
