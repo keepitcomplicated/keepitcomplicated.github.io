@@ -1,0 +1,149 @@
+// Fonts
+$font-sans-serif: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+
+$font-monospaced: "Commit Mono", monospace;
+
+@font-face {
+  font-family: "Commit Mono";
+  src: url("/fonts/CommitMono.woff2");
+}
+
+// Colors
+
+$color-yellow-100: #FFECBB;
+$color-yellow-300: #FFD876;
+$color-yellow-500: #FFBE1A;
+$color-yellow-700: #87640C;
+$color-yellow-900: #4C3805;
+
+$color-blue-100: #B3E9F4;
+$color-blue-300: #66D3E8;
+$color-blue-500: #00B5D9;
+$color-blue-700: #006073;
+$color-blue-900: #003641;
+
+$color-red-100: #FFCCCC;
+$color-red-300: #FF9898;
+$color-red-500: #FF5454;
+$color-red-700: #992828;
+$color-red-900: #5A1212;
+
+
+// Reset
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+hr {
+  border-color: rgb(0, 0, 0, 0.4);
+  border-style: dashed;
+  border-width: 1px 0px 0px 0px;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+  font-family: $font-monospaced;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+  font-family: $font-sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+// CSS
+
+.rounded {
+  border-radius: 24px;
+}
+
+.padded {
+  padding: 24px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 1250px;
+  padding-top: 80px;
+}
+
+.m-square {
+  width: 390px;
+  height: 390px;
+}
+
+.header {
+  position: fixed;
+  overflow: hidden;
+  background-color: white;
+}
+
+.all-stars {
+  background-color: red;
+}
+
+.all-stars @for $i from 1 through 36 {
+div:nth-child(#{$i}) {
+$h: (random(400) + 100) + px;
+height: $h;
+line-height: $h;
+}
+
+// .logo
+
+//   width: 390px
+//   height: 390px
+//   background-color: yellow
+
+// .project-name
+
+//   width: 390px
+//   height: 175px
+//   background-color: blue
+
+// .project-info
+
+//   width: 390px
+//   height: 390px
+//   background-color: green
+
+// .m-rect
+
+//   width: 390px
+//   height: 390px
+//   background-color: purple

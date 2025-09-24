@@ -1,0 +1,315 @@
+// Fonts
+
+@font-face
+  font-family: "Commit Mono"
+  src: url("/fonts/CommitMono.woff2")
+
+$font-sans-serif: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif
+
+$font-monospaced: "Commit Mono", monospace
+
+
+// Colors
+
+$color-yellow-100: #FFECBB
+$color-yellow-300: #FFD876
+$color-yellow-500: #FFBE1A
+$color-yellow-700: #87640C
+$color-yellow-900: #4C3805
+
+$color-blue-100: #B3E9F4
+$color-blue-300: #66D3E8
+$color-blue-500: #00B5D9
+$color-blue-700: #006073
+$color-blue-900: #003641
+
+$color-red-100: #FFCCCC
+$color-red-300: #FF9898
+$color-red-500: #FF5454
+$color-red-700: #992828
+$color-red-900: #5A1212
+
+
+// Reset
+
+*, *::before, *::after
+  box-sizing: border-box
+
+*
+  margin: 0
+
+body
+  line-height: 1.5
+  -webkit-font-smoothing: antialiased
+  background-color: black
+  display: flex
+  justify-content: center
+
+img, picture, video, canvas, svg
+  display: block
+  max-width: 100%
+
+input, button, textarea, select
+  font: inherit
+
+hr
+  border-color: rgb(0, 0, 0, 0.4)
+  border-style: dashed
+  border-width: 1px 0px 0px 0px
+
+p, h1, h2, h3, h4, h5, h6
+  overflow-wrap: break-word
+
+p
+  text-wrap: pretty
+  font-family: $font-monospaced
+  font-size: 14px
+  line-height: 18px
+
+h1, h2, h3, h4, h5, h6
+  text-wrap: balance
+  font-family: $font-sans-serif
+
+a 
+  color: black
+  text-decoration: none
+
+
+// CSS
+
+.container
+  display: flex
+  flex-direction: row
+  align-items: flex-start
+  gap: 40px
+  width: 1250px
+  overflow: auto
+  margin: 40px
+
+  .content
+    flex-wrap: wrap
+    width: 820px
+
+.external-link
+  padding-right: 18px
+  background-position: center right
+  background-repeat: no-repeat
+  background-size: 12px
+  background-image: url(/img/icon-external-link.svg)
+
+.bold
+  font-weight: 700
+
+header
+  display: flex
+  flex-direction: column
+  background-color: white
+  width: 390px
+  border-radius: 24px
+  padding: 24px
+
+  p
+    padding: 5px 0px
+
+  h2
+    padding-bottom: 8px
+    margin-top: -4px
+
+  hr
+    margin: 20px 0px
+
+  img.profile-pic
+    border-radius: 8px
+    border-color: rgb(0, 0, 0, 0.2)
+    border-width: 0.5px
+    border-style: solid
+    float: right
+
+  p.icon
+    padding-left: 24px
+    background-position: center left
+    background-repeat: no-repeat
+    background-size: 16px
+
+  p.profession
+    background-image: url(/img/icon-profession.png)
+
+  p.location
+    background-image: url(/img/icon-location.png)
+
+  p.email
+    background-image: url(/img/icon-email.png)
+
+  p.open-to-work
+    background-image: url(/img/icon-open-to-work.png)
+
+  p.linkedin
+    background-image: url(/img/icon-linkedin.svg)
+
+  p.mastodon
+    background-image: url(/img/icon-mastodon.svg)
+
+  p.github
+    background-image: url(/img/icon-github.svg)
+
+main
+  width: 820px
+  display: flex
+  flex-direction: row
+  align-items: flex-start
+  gap: 40px
+  justify-content: center
+
+.left, .right
+  width: 390px
+
+.s-square, .m-square, .s-rect, .m-rect, .l-rect
+  padding: 24px
+  margin-bottom: 40px
+  border-radius: 24px
+  background-color: #333
+
+.s-square
+  width: 175px
+  height: 175px
+
+.m-square
+  width: 390px
+  height: 390px
+
+.s-rect
+  width: 390px
+  height: 175px
+
+.m-rect
+  width: 390px
+  height: 605px
+
+.l-rect
+  width: 820px
+  height: 605px
+
+.title
+  background-color: white
+  position: relative
+  padding-top: 16px
+
+  h1
+    font-size: 40px
+    padding-bottom: 8px
+
+.role
+  position: absolute
+  bottom: 24px
+  left: 24px
+
+  p
+    font-weight: 700
+
+.year
+  position: absolute
+  bottom: 24px
+  right: 24px
+
+.description
+  position: relative
+
+  .responsibilities
+    position: absolute
+    bottom: 24px
+    left: 24px
+    display: flex
+    flex-wrap: wrap
+    gap: 8px
+
+    p
+      padding: 5px 9px
+
+.large-link
+  background-color: white
+
+  div
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+    height: 127px
+
+  .icon, .photo
+    border-radius: 8px
+    border-color: rgb(0, 0, 0, 0.2)
+    border-width: 0.5px
+    border-style: solid
+    background-color: #CCC
+
+  .icon
+    width: 32px
+    height: 32px
+
+  p
+    font-weight: 700
+    width: 144px
+
+  .external-link
+    font-weight: 400
+    font-size: 11px
+    color: #666
+
+  .photo
+    width: 178px
+    height: 127px
+    float: right
+
+#all-stars, #seed, #quizup
+  padding-bottom: 80px
+
+  .logo
+    background-size: 390px 390px
+    border-width: 2px
+    border-style: solid
+
+  .responsibilities p
+    border-radius: 6px
+    font-size: 12px
+    font-weight: 700
+
+#all-stars
+  .title
+    background-color: $color-yellow-500
+
+  .logo
+    background-image: url(/img/logo-all-stars.png)
+    border-color: $color-yellow-900
+
+  .description
+    background-color: $color-yellow-100
+
+  .responsibilities p
+    background-color: $color-yellow-300
+
+#seed 
+  .title
+    background-color: $color-blue-500
+
+  .logo
+    background-image: url(/img/logo-all-stars.png)
+    border-color: $color-blue-900
+
+  .description
+    background-color: $color-blue-100
+
+  .responsibilities p
+    background-color: $color-blue-300
+
+#quizup
+  .title
+    background-color: $color-red-500
+
+  .logo
+    background-image: url(/img/logo-all-stars.png)
+    border-color: $color-red-900
+
+  .description
+    background-color: $color-red-100
+
+  .responsibilities p
+    background-color: $color-red-300

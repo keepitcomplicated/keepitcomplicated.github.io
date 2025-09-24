@@ -14,7 +14,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background-color: #EEE;
+  background-color: #DDD;
 }
 
 img, picture, video, canvas, svg {
@@ -27,9 +27,9 @@ input, button, textarea, select {
 }
 
 hr {
-  border-color: black;
-  border-style: dashed;
-  border-width: 1.5px 0px 0px 0px;
+  border-color: #DDD;
+  border-style: solid;
+  border-width: 1px 0px 0px 0px;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: black;
   text-decoration: underline;
-  text-decoration-color: black;
+  text-decoration-color: #AAA;
 }
 
 b {
@@ -137,14 +137,10 @@ small {
 
 .info-card {
   top: 40px;
-  height: 305px;
+  height: 390px;
   position: sticky;
 }
-.info-card hr {
-  border-color: #00B5D9;
-}
 .info-card p {
-  font-size: 16px;
   padding: 5px 0px;
 }
 .info-card h2 {
@@ -193,6 +189,12 @@ small {
 }
 .info-card .github {
   background-image: url(/img/icon-github.svg);
+}
+.info-card .link {
+  background-image: url(/img/icon-link.svg);
+}
+.info-card .archive {
+  background-image: url(/img/icon-archive.svg);
 }
 
 .title h1 {
@@ -248,8 +250,6 @@ small {
 .responsibilities p {
   padding: 3px 8px;
   border-radius: 6px;
-  border-style: dashed;
-  border-width: 1.5px;
   font-size: 12px;
   font-weight: 700;
 }
@@ -347,48 +347,32 @@ small {
 .section-end {
   width: 820px;
   height: 40px;
-  background-color: #EEE;
-  border-color: #EEE;
+  background-color: #DDD;
+  border-color: #DDD;
   box-shadow: none;
 }
 .section-end:hover {
   box-shadow: none;
 }
 
-.all-stars hr {
-  border-color: #FFA026;
-}
 .all-stars .responsibilities p {
   color: black;
-  border-color: #FFA026;
-  background-color: white;
+  background-color: #EEE;
 }
 
-.seed hr {
-  border-color: #02D174;
-}
 .seed .responsibilities p {
   color: black;
-  border-color: #02D174;
-  background-color: white;
+  background-color: #EEE;
 }
 
-.quizup hr {
-  border-color: #FF5454;
-}
 .quizup .responsibilities p {
   color: black;
-  border-color: #FF5454;
-  background-color: white;
+  background-color: #EEE;
 }
 
-.misc-work hr {
-  border-color: #00B5D9;
-}
 .misc-work .responsibilities p {
   color: black;
-  border-color: #00B5D9;
-  background-color: white;
+  background-color: #EEE;
 }
 
 .webby {

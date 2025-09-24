@@ -35,7 +35,7 @@ $color-green: #02D174
 body
   line-height: 1.5
   -webkit-font-smoothing: antialiased
-  background-color: $color-gray-50
+  background-color: $color-gray-100
 
 img, picture, video, canvas, svg
   display: block
@@ -45,9 +45,9 @@ input, button, textarea, select
   font: inherit
 
 hr
-  border-color: black
-  border-style: dashed
-  border-width: 1.5px 0px 0px 0px
+  border-color: $color-gray-100
+  border-style: solid
+  border-width: 1px 0px 0px 0px
 
 p, h1, h2, h3, h4, h5, h6
   overflow-wrap: break-word
@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6
 a 
   color: black
   text-decoration: underline
-  text-decoration-color: black
+  text-decoration-color: $color-gray-250
 
 b
   font-weight: 700
@@ -136,13 +136,10 @@ small
 
 .info-card
   top: 40px
-  height: 305px
+  height: 390px
   position: sticky
-  hr
-    border-color: $color-blue
 
   p
-    font-size: 16px
     padding: 5px 0px
 
   h2
@@ -188,6 +185,12 @@ small
 
   .github
     background-image: url(/img/icon-github.svg)
+
+  .link
+    background-image: url(/img/icon-link.svg)
+
+  .archive
+    background-image: url(/img/icon-archive.svg)
 
 .title
   h1
@@ -242,8 +245,6 @@ small
   p
     padding: 3px 8px
     border-radius: 6px
-    border-style: dashed
-    border-width: 1.5px
     font-size: 12px
     font-weight: 700
 
@@ -337,51 +338,35 @@ small
 .section-end
   width: 820px
   height: 40px
-  background-color: $color-gray-50
-  border-color: $color-gray-50
+  background-color: $color-gray-100
+  border-color: $color-gray-100
   box-shadow: none
   &:hover
     box-shadow: none
 
 .all-stars
-  hr
-    border-color: $color-yellow
-
   .responsibilities
     p
       color: black
-      border-color: $color-yellow
-      background-color: white
+      background-color: $color-gray-50
 
 .seed
-  hr
-    border-color: $color-green
-
   .responsibilities
     p
       color: black
-      border-color: $color-green
-      background-color: white
+      background-color: $color-gray-50
 
 .quizup
-  hr
-    border-color: $color-red
-
   .responsibilities
     p
       color: black
-      border-color: $color-red
-      background-color: white
+      background-color: $color-gray-50
 
 .misc-work
-  hr
-    border-color: $color-blue
-
   .responsibilities
     p
       color: black
-      border-color: $color-blue
-      background-color: white
+      background-color: $color-gray-50
 
 .webby
   background-color: #111
