@@ -161,19 +161,19 @@ small {
   background-size: 20px;
 }
 .info-card .profession {
-  background-image: url(/img/icon-work.svg);
+  background-image: url(/img/icon-pencil.png);
 }
 .info-card .location {
-  background-image: url(/img/icon-home.svg);
+  background-image: url(/img/icon-home.png);
 }
 .info-card .email {
-  background-image: url(/img/icon-mail.svg);
+  background-image: url(/img/icon-email.png);
 }
 .info-card .email a {
   text-decoration-color: #FF5454;
 }
 .info-card .open-to-work {
-  background-image: url(/img/icon-inbox.svg);
+  background-image: url(/img/icon-inbox.png);
 }
 .info-card .linkedin {
   background-image: url(/img/icon-linkedin.svg);
@@ -193,8 +193,11 @@ small {
 .info-card .link {
   background-image: url(/img/icon-link.svg);
 }
-.info-card .archive {
-  background-image: url(/img/icon-archive.svg);
+.info-card .archive-1 {
+  background-image: url(/img/icon-box-1.png);
+}
+.info-card .archive-2 {
+  background-image: url(/img/icon-box-2.png);
 }
 
 .title h1 {
