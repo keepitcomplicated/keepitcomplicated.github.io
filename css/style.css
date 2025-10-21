@@ -52,7 +52,10 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: black;
   text-decoration: underline;
-  text-decoration-color: #AAA;
+  text-decoration-color: #BBB;
+}
+a:hover {
+  background-color: #EEE;
 }
 
 b {
@@ -212,8 +215,8 @@ small {
   align-items: flex-end;
 }
 .title .company p {
-  padding-bottom: 17px;
-  font-size: 18px;
+  padding-bottom: 16px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 24px;
 }
@@ -237,24 +240,68 @@ small {
 }
 
 .description {
-  position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+.description p {
+  padding-bottom: 14px;
+}
+
+.tools {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 16px;
+}
+.tools .icons {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-content: center;
+}
+.tools .icons a {
+  display: flex;
+  flex-direction: column;
+  width: 24px;
+  height: 24px;
+}
+.tools .icons a:hover {
+  background-color: white;
+}
+.tools .icons img.rounded {
+  border-radius: 4px;
 }
 
 .responsibilities {
-  position: absolute;
-  bottom: 24px;
-  left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.responsibilities .tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
-.responsibilities p {
+.responsibilities .tags p {
+  display: flex;
+  color: black;
+  background-color: #EEE;
   padding: 3px 8px;
   border-radius: 6px;
   font-size: 12px;
   font-weight: 700;
+  text-transform: none;
+  width: max-content;
+}
+
+.responsibilities p, .tools p {
+  color: #999;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0px;
 }
 
 .phone, .height-16-9 {
@@ -356,26 +403,6 @@ small {
 }
 .section-end:hover {
   box-shadow: none;
-}
-
-.all-stars .responsibilities p {
-  color: black;
-  background-color: #EEE;
-}
-
-.seed .responsibilities p {
-  color: black;
-  background-color: #EEE;
-}
-
-.quizup .responsibilities p {
-  color: black;
-  background-color: #EEE;
-}
-
-.misc-work .responsibilities p {
-  color: black;
-  background-color: #EEE;
 }
 
 .webby {

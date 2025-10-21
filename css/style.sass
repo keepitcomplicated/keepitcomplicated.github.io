@@ -66,7 +66,9 @@ h1, h2, h3, h4, h5, h6
 a 
   color: black
   text-decoration: underline
-  text-decoration-color: $color-gray-250
+  text-decoration-color: $color-gray-200
+  &:hover
+    background-color: $color-gray-50
 
 b
   font-weight: 700
@@ -208,8 +210,8 @@ small
     align-items: flex-end
 
     p
-      padding-bottom: 17px
-      font-size: 18px
+      padding-bottom: 16px
+      font-size: 16px
       font-weight: 500
       line-height: 24px
 
@@ -233,23 +235,65 @@ small
     font-weight: 300
 
 .description
-  position: relative
   display: flex
   flex-direction: column
-
-.responsibilities
-  position: absolute
-  bottom: 24px
-  left: 24px
-  display: flex
-  flex-wrap: wrap
-  gap: 8px
+  justify-content: space-between
 
   p
-    padding: 3px 8px
-    border-radius: 6px
-    font-size: 12px
+    padding-bottom: 14px
+
+.tools
+  display: flex
+  flex-direction: column
+  gap: 8px
+  padding-bottom: 16px
+
+  .icons
+    display: flex
+    flex-direction: row
+    gap: 12px
+    align-content: center
+    a 
+      display: flex
+      flex-direction: column
+      width: 24px
+      height: 24px
+
+      &:hover
+        background-color: white
+
+    img.rounded
+      border-radius: 4px
+
+.responsibilities
+  display: flex
+  flex-direction: column
+  gap: 8px
+
+  .tags
+    display: flex
+    flex-wrap: wrap
+    gap: 8px
+    p
+      display: flex
+      color: black
+      background-color: $color-gray-50
+      padding: 3px 8px
+      border-radius: 6px
+      font-size: 12px
+      font-weight: 700
+      text-transform: none
+      width: max-content;
+
+.responsibilities, .tools
+
+  p
+    color: $color-gray-300
+    font-family: $font-sans-serif
+    font-size: 10px
     font-weight: 700
+    text-transform: uppercase
+    padding: 0px
 
 .phone, .height-16-9
   background-color: white
@@ -346,30 +390,6 @@ small
   box-shadow: none
   &:hover
     box-shadow: none
-
-.all-stars
-  .responsibilities
-    p
-      color: black
-      background-color: $color-gray-50
-
-.seed
-  .responsibilities
-    p
-      color: black
-      background-color: $color-gray-50
-
-.quizup
-  .responsibilities
-    p
-      color: black
-      background-color: $color-gray-50
-
-.misc-work
-  .responsibilities
-    p
-      color: black
-      background-color: $color-gray-50
 
 .webby
   background-color: #111
