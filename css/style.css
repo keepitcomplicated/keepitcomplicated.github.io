@@ -37,7 +37,6 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 p, ul {
-  text-wrap: pretty;
   font-family: "Commit Mono", monospace;
   font-size: 14px;
   line-height: 18px;
@@ -45,7 +44,6 @@ p, ul {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  text-wrap: balance;
   font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
 }
 
