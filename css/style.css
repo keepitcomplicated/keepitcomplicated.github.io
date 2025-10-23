@@ -51,6 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   color: black;
+  font-weight: 550;
   text-decoration: underline;
   text-decoration-color: #BBB;
 }
@@ -226,9 +227,10 @@ small {
   left: 24px;
 }
 .title .role p {
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 20px;
+  line-height: 26px;
 }
 .title .year {
   position: absolute;
@@ -252,7 +254,7 @@ small {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding-bottom: 16px;
+  padding-bottom: 24px;
 }
 .tools .icons {
   display: flex;
@@ -261,6 +263,7 @@ small {
   align-content: center;
 }
 .tools .icons a {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 24px;
@@ -269,8 +272,22 @@ small {
 .tools .icons a:hover {
   background-color: white;
 }
-.tools .icons img.rounded {
+.tools .icons a:hover p {
+  opacity: 0.8;
+}
+.tools .icons a img.rounded {
   border-radius: 4px;
+}
+.tools .icons a p {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+  font-size: 8px;
+  opacity: 0;
+  transition: opacity 250ms;
+  will-change: opacity;
 }
 
 .responsibilities {
