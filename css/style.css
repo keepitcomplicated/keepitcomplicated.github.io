@@ -364,16 +364,19 @@ small {
   height: 32px;
 }
 .large-link p {
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: 700;
-  line-height: 15px;
+  line-height: 16px;
   max-width: 144px;
 }
 .large-link .external-link {
+  font-family: "Commit Mono", monospace;
   font-weight: 400;
   font-size: 11px;
-  color: #999;
+  color: #666;
   text-decoration: underline;
+  text-decoration-color: #CCC;
 }
 .large-link .photo {
   width: 178px;
