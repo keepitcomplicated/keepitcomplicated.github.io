@@ -146,7 +146,7 @@ small {
   padding: 5px 0px;
 }
 .info-card h2 {
-  padding-bottom: 8px;
+  padding-bottom: 4px;
   margin-top: -4px;
 }
 .info-card hr {
@@ -269,6 +269,9 @@ small {
 }
 .tools .icons a:hover {
   background-color: white;
+}
+.tools .icons a:hover img.rounded {
+  border-radius: 4px;
 }
 .tools .icons a:hover p {
   opacity: 0.8;
