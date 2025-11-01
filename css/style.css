@@ -12,9 +12,9 @@
 }
 
 body {
+  background-color: #DDD;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background-color: #DDD;
 }
 
 img, picture, video, canvas, svg {
@@ -39,7 +39,7 @@ p, h1, h2, h3, h4, h5, h6 {
 p, ul {
   font-family: "Commit Mono", monospace;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 20px;
   font-weight: 300;
 }
 
@@ -63,6 +63,16 @@ b {
 
 small {
   font-size: 12px;
+}
+
+.background {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(0deg, rgb(204, 204, 204) 0%, rgb(238, 238, 238) 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .mobile-nav {
@@ -96,7 +106,7 @@ small {
   border-radius: 24px;
   color: black;
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 20px 25px -5px, rgba(0, 0, 0, 0.06) 0px 10px 10px -5px;
   transition: box-shadow 250ms;
   will-change: box-shadow;
 }
@@ -144,6 +154,7 @@ small {
 }
 .info-card p {
   padding: 5px 0px;
+  line-height: 18px;
 }
 .info-card h2 {
   padding-bottom: 4px;
@@ -174,6 +185,9 @@ small {
 .info-card .email a {
   text-decoration-color: #FF5454;
 }
+.info-card .email a:hover {
+  background-color: #FFD4D4;
+}
 .info-card .open-to-work {
   background-image: url(/img/icon-inbox.png);
 }
@@ -183,11 +197,17 @@ small {
 .info-card .linkedin a {
   text-decoration-color: #0A66C2;
 }
+.info-card .linkedin a:hover {
+  background-color: #C2D9F0;
+}
 .info-card .mastodon {
   background-image: url(/img/icon-mastodon.svg);
 }
 .info-card .mastodon a {
   text-decoration-color: #6364FF;
+}
+.info-card .mastodon a:hover {
+  background-color: #D8D8FF;
 }
 .info-card .github {
   background-image: url(/img/icon-github.svg);
@@ -345,6 +365,10 @@ small {
 
 .logo {
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 25px -5px, rgba(0, 0, 0, 0.12) 0px 10px 10px -5px;
+}
+.logo:hover {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 20px 25px -5px, rgba(0, 0, 0, 0.18) 0px 10px 10px -5px;
 }
 
 .large-link div {
@@ -409,17 +433,17 @@ small {
   margin-inline: auto;
   width: fit-content;
   background-color: white;
-  padding: 4px 8px;
+  padding: 1px 7px;
   border-radius: 6px;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 700;
 }
 
 .section-end {
   width: 820px;
-  height: 40px;
-  background-color: #DDD;
-  border-color: #DDD;
+  height: 55px;
+  background-color: rgba(255, 255, 255, 0);
+  border-color: rgba(255, 255, 255, 0);
   box-shadow: none;
 }
 .section-end:hover {
@@ -427,8 +451,9 @@ small {
 }
 
 .webby {
-  background-color: #111;
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(51, 51, 51) 100%);
   color: white;
+  text-shadow: 0px 1px 3px black;
 }
 .webby p {
   font-size: 18px;
@@ -440,6 +465,7 @@ small {
 }
 .webby ul li {
   margin: 8px 0px;
+  line-height: 18px;
 }
 .webby .webby-awards {
   display: flex;

@@ -33,9 +33,9 @@ $color-green: #02D174
   font-synthesis: none !important
 
 body
+  background-color: $color-gray-100
   line-height: 1.5
   -webkit-font-smoothing: antialiased
-  background-color: $color-gray-100
 
 img, picture, video, canvas, svg
   display: block
@@ -55,11 +55,12 @@ p, h1, h2, h3, h4, h5, h6
 p, ul
   font-family: $font-monospaced
   font-size: 14px
-  line-height: 18px
+  line-height: 20px
   font-weight: 300
 
 h1, h2, h3, h4, h5, h6
   font-family: $font-sans-serif
+  // text-shadow: -0.5px -0.5px 0.5px #ff00ff, 0.5px -0.5px 0.5px #ffff00, 0.5px 0.5px 0.5px #00ffff
 
 a 
   color: black
@@ -76,6 +77,15 @@ small
   font-size: 12px
 
 // CSS
+
+.background
+  height: 100vh
+  width: 100vw
+  background: linear-gradient(0deg,rgba(204, 204, 204, 1) 0%, rgba(238, 238, 238, 1) 100%)
+  position: fixed
+  top: 0
+  left: 0
+  z-index: -1
 
 .mobile-nav
   display: none
@@ -104,7 +114,7 @@ small
   border-radius: 24px
   color: black
   background-color: white
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 20px 25px -5px, rgba(0, 0, 0, 0.06) 0px 10px 10px -5px
   transition: box-shadow 250ms
   will-change: box-shadow
   &:hover
@@ -142,6 +152,7 @@ small
 
   p
     padding: 5px 0px
+    line-height: 18px
 
   h2
     padding-bottom: 4px
@@ -170,6 +181,8 @@ small
     background-image: url(/img/icon-email.png)
     a
       text-decoration-color: $color-red
+      &:hover
+        background-color: #FFD4D4
 
   .open-to-work
     background-image: url(/img/icon-inbox.png)
@@ -178,11 +191,15 @@ small
     background-image: url(/img/icon-linkedin.svg)
     a
       text-decoration-color: #0A66C2
+      &:hover
+        background-color: #C2D9F0
 
   .mastodon
     background-image: url(/img/icon-mastodon.svg)
     a
       text-decoration-color: #6364FF
+      &:hover
+        background-color: #D8D8FF
 
   .github
     background-image: url(/img/icon-github.svg)
@@ -334,6 +351,9 @@ small
 
 .logo
   overflow: hidden
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 25px -5px, rgba(0, 0, 0, 0.12) 0px 10px 10px -5px
+  &:hover
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 20px 25px -5px, rgba(0, 0, 0, 0.18) 0px 10px 10px -5px
 
 .large-link
   div
@@ -396,24 +416,25 @@ small
     margin-inline: auto
     width: fit-content
     background-color: white
-    padding: 4px 8px
+    padding: 1px 7px
     border-radius: 6px
-    font-size: 12px
+    font-size: 10px
     font-weight: 700
 
 
 .section-end
   width: 820px
-  height: 40px
-  background-color: $color-gray-100
-  border-color: $color-gray-100
+  height: 55px
+  background-color: rgba(255, 255, 255, 0)
+  border-color: rgba(255, 255, 255, 0)
   box-shadow: none
   &:hover
     box-shadow: none
 
 .webby
-  background-color: #111
+  background: linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(51, 51, 51, 1) 100%)
   color: white
+  text-shadow: 0px 1px 3px black
   p
     font-size: 18px
   ul
@@ -422,6 +443,7 @@ small
     padding: 0px 0px 8px 24px
     li
       margin: 8px 0px
+      line-height: 18px
 
   .webby-awards
     display: flex
