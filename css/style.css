@@ -636,16 +636,6 @@ small {
   body {
     zoom: 0.9;
   }
-  body a {
-    display: block;
-    text-decoration: none;
-    padding-bottom: 12px;
-    color: white;
-    font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
-    font-size: 9px;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
   .container {
     display: flex;
     flex-direction: column;
