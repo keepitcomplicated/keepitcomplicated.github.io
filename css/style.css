@@ -377,13 +377,6 @@ small {
   will-change: all;
 }
 
-.all-stars-info:has(.linear:hover) .pd {
-  color: white;
-  background-color: black;
-  transition: all 250ms;
-  will-change: all;
-}
-
 .seed-info:has(.figma:hover) .ui, .seed-info:has(.figma:hover) .ux, .seed-info:has(.figma:hover) .ds, .seed-info:has(.figma:hover) .pr {
   color: white;
   background-color: black;
