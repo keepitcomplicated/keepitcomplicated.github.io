@@ -611,16 +611,21 @@ small {
   text-shadow: 0px 1px 3px black;
 }
 .webby p {
-  font-size: 18px;
+  font-size: 22px;
+  line-height: 18px;
+  padding-bottom: 8px;
+}
+.webby b {
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
 }
 .webby ul {
-  font-size: 16px;
+  font-size: 17px;
+  line-height: 16px;
   margin: 0px;
   padding: 0px 0px 8px 24px;
 }
 .webby ul li {
   margin: 8px 0px;
-  line-height: 18px;
 }
 .webby .webby-awards {
   display: flex;
