@@ -342,63 +342,98 @@ small {
   padding: 0px;
 }
 
-.all-stars-info:has(.figma:hover) .pd, .all-stars-info:has(.figma:hover) .ui, .all-stars-info:has(.figma:hover) .ux, .all-stars-info:has(.figma:hover) .ds, .all-stars-info:has(.figma:hover) .pr {
+.all-stars-info:has(.figma:hover) .product-design, .all-stars-info:has(.figma:hover) .ui, .all-stars-info:has(.figma:hover) .ux, .all-stars-info:has(.figma:hover) .design-system, .all-stars-info:has(.figma:hover) .prototyping {
   color: white;
   background-color: black;
   transition: all 250ms;
   will-change: all;
 }
 
-.all-stars-info:has(.illustrator:hover) .ad, .all-stars-info:has(.illustrator:hover) .br, .all-stars-info:has(.illustrator:hover) .id {
+.all-stars-info:has(.illustrator:hover) .art-direction, .all-stars-info:has(.illustrator:hover) .branding, .all-stars-info:has(.illustrator:hover) .icon-design {
   color: white;
   background-color: black;
   transition: all 250ms;
   will-change: all;
 }
 
-.all-stars-info:has(.keynote:hover) .an, .all-stars-info:has(.keynote:hover) .pt {
+.all-stars-info:has(.origami:hover) .ui, .all-stars-info:has(.origami:hover) .ux, .all-stars-info:has(.origami:hover) .prototyping, .all-stars-info:has(.origami:hover) .animation {
   color: white;
   background-color: black;
   transition: all 250ms;
   will-change: all;
 }
 
-.all-stars-info:has(.origami:hover) .ui, .all-stars-info:has(.origami:hover) .ux, .all-stars-info:has(.origami:hover) .pr, .all-stars-info:has(.origami:hover) .an {
+.all-stars-info:has(.keynote:hover) .animation, .all-stars-info:has(.keynote:hover) .presentations {
   color: white;
   background-color: black;
   transition: all 250ms;
   will-change: all;
 }
 
-.all-stars-info:has(.unity:hover) .ui, .all-stars-info:has(.unity:hover) .ta {
+.all-stars-info:has(.unity:hover) .ui, .all-stars-info:has(.unity:hover) .tech-art {
   color: white;
   background-color: black;
   transition: all 250ms;
   will-change: all;
 }
 
-.seed-info:has(.figma:hover) .ui, .seed-info:has(.figma:hover) .ux, .seed-info:has(.figma:hover) .ds, .seed-info:has(.figma:hover) .pr {
+.all-stars-info:has(.linear:hover) .product-design {
   color: white;
   background-color: black;
   transition: all 250ms;
   will-change: all;
 }
 
-.seed-info:has(.illustrator:hover) .id, .seed-info:has(.illustrator:hover) .ua, .seed-info:has(.illustrator:hover) .br {
+.all-stars-info:has(.notion:hover) .product-design, .all-stars-info:has(.notion:hover) .ux {
   color: white;
   background-color: black;
   transition: all 250ms;
   will-change: all;
 }
 
-.seed-info:has(.keynote:hover) .pt, .seed-info:has(.keynote:hover) .an {
+.all-stars-info:has(.miro:hover) .product-design, .all-stars-info:has(.miro:hover) .ui, .all-stars-info:has(.miro:hover) .ux {
   color: white;
   background-color: black;
   transition: all 250ms;
   will-change: all;
 }
 
-.seed-info:has(.origami:hover) .ui, .seed-info:has(.origami:hover) .ux, .seed-info:has(.origami:hover) .pr, .seed-info:has(.origami:hover) .an {
+.seed-info:has(.figma:hover) .ui, .seed-info:has(.figma:hover) .ux, .seed-info:has(.figma:hover) .design-system, .seed-info:has(.figma:hover) .prototyping, .seed-info:has(.figma:hover) .ui-art-direction {
+  color: white;
+  background-color: black;
+  transition: all 250ms;
+  will-change: all;
+}
+
+.seed-info:has(.illustrator:hover) .ui, .seed-info:has(.illustrator:hover) .icon-design, .seed-info:has(.illustrator:hover) .ui-art-direction, .seed-info:has(.illustrator:hover) .branding {
+  color: white;
+  background-color: black;
+  transition: all 250ms;
+  will-change: all;
+}
+
+.seed-info:has(.keynote:hover) .presentations, .seed-info:has(.keynote:hover) .animation {
+  color: white;
+  background-color: black;
+  transition: all 250ms;
+  will-change: all;
+}
+
+.seed-info:has(.origami:hover) .ui, .seed-info:has(.origami:hover) .ux, .seed-info:has(.origami:hover) .prototyping, .seed-info:has(.origami:hover) .animation {
+  color: white;
+  background-color: black;
+  transition: all 250ms;
+  will-change: all;
+}
+
+.seed-info:has(.miro:hover) .ui, .seed-info:has(.miro:hover) .ux {
+  color: white;
+  background-color: black;
+  transition: all 250ms;
+  will-change: all;
+}
+
+.seed-info:has(.atlassian:hover) .documentation {
   color: white;
   background-color: black;
   transition: all 250ms;
@@ -412,14 +447,7 @@ small {
   will-change: all;
 }
 
-.seed-info:has(.atlassian:hover) .do {
-  color: white;
-  background-color: black;
-  transition: all 250ms;
-  will-change: all;
-}
-
-.quizup-info:has(.illustrator:hover) .ui, .quizup-info:has(.illustrator:hover) .ux, .quizup-info:has(.illustrator:hover) .ds, .quizup-info:has(.illustrator:hover) .ad, .quizup-info:has(.illustrator:hover) .br, .quizup-info:has(.illustrator:hover) .wd {
+.quizup-info:has(.illustrator:hover) .ui, .quizup-info:has(.illustrator:hover) .ux, .quizup-info:has(.illustrator:hover) .design-system, .quizup-info:has(.illustrator:hover) .art-direction, .quizup-info:has(.illustrator:hover) .branding, .quizup-info:has(.illustrator:hover) .web-design {
   color: white;
   background-color: black;
   transition: all 250ms;
@@ -433,28 +461,35 @@ small {
   will-change: all;
 }
 
-.quizup-info:has(.keynote:hover) .an, .quizup-info:has(.keynote:hover) .pt {
+.quizup-info:has(.origami:hover) .ui, .quizup-info:has(.origami:hover) .ux, .quizup-info:has(.origami:hover) .prototyping, .quizup-info:has(.origami:hover) .animation {
   color: white;
   background-color: black;
   transition: all 250ms;
   will-change: all;
 }
 
-.quizup-info:has(.origami:hover) .ui, .quizup-info:has(.origami:hover) .ux, .quizup-info:has(.origami:hover) .pr, .quizup-info:has(.origami:hover) .an {
+.quizup-info:has(.flinto:hover) .ux, .quizup-info:has(.flinto:hover) .prototyping {
   color: white;
   background-color: black;
   transition: all 250ms;
   will-change: all;
 }
 
-.quizup-info:has(.flinto:hover) .ux, .quizup-info:has(.flinto:hover) .pr {
+.quizup-info:has(.miro:hover) .product-design, .quizup-info:has(.miro:hover) .ux {
   color: white;
   background-color: black;
   transition: all 250ms;
   will-change: all;
 }
 
-.quizup-info:has(.miro:hover) .pd, .quizup-info:has(.miro:hover) .ux {
+.quizup-info:has(.keynote:hover) .animation, .quizup-info:has(.keynote:hover) .presentations {
+  color: white;
+  background-color: black;
+  transition: all 250ms;
+  will-change: all;
+}
+
+.quizup-info:has(.asana:hover) .product-design {
   color: white;
   background-color: black;
   transition: all 250ms;
