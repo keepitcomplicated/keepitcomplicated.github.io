@@ -676,10 +676,10 @@ small {
   .responsibilities {
     gap: 8px;
   }
-  .responsibilities .tags {
+  .tags {
     gap: 8px;
   }
-  .responsibilities .tags p {
+  .tags p {
     padding: 2.5px 7px;
   }
 }
