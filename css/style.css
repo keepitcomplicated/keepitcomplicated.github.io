@@ -613,7 +613,7 @@ small {
 .webby p {
   font-size: 22px;
   line-height: 18px;
-  padding-bottom: 8px;
+  padding: 4px 4px;
 }
 .webby b {
   font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
@@ -631,7 +631,7 @@ small {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 8px;
+  gap: 16px;
 }
 .webby a {
   display: none;
