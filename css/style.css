@@ -153,11 +153,10 @@ small {
   position: sticky;
 }
 .info-card p {
-  padding: 5px 0px;
-  line-height: 18px;
+  padding: 7px 0px 3px 0px;
+  line-height: 19px;
 }
 .info-card h2 {
-  padding-bottom: 4px;
   margin-top: -4px;
 }
 .info-card hr {
@@ -168,10 +167,15 @@ small {
   float: right;
 }
 .info-card .icon {
-  padding-left: 30px;
-  background-position: center left;
+  padding-left: 32px;
+  background-position: 0px 50%;
   background-repeat: no-repeat;
   background-size: 20px;
+}
+.info-card .icon:hover {
+  background-position: 3px 50%;
+  transition: all 125ms ease-in-out;
+  will-change: all;
 }
 .info-card .profession {
   background-image: url(/img/icon-pencil.png);
@@ -187,11 +191,16 @@ small {
 }
 .info-card .email a:hover {
   background-color: #FFD4D4;
+  transition: all 300px ease-out;
+}
+.info-card .work {
+  background-image: url(/img/icon-work.png);
 }
 .info-card .open-to-work {
   background-image: url(/img/icon-inbox.png);
 }
 .info-card .linkedin {
+  padding: 5px 0px 5px 30px;
   background-image: url(/img/icon-linkedin.svg);
 }
 .info-card .linkedin a {
@@ -199,8 +208,10 @@ small {
 }
 .info-card .linkedin a:hover {
   background-color: #C2D9F0;
+  transition: all 300px ease-out;
 }
 .info-card .mastodon {
+  padding: 5px 0px 5px 30px;
   background-image: url(/img/icon-mastodon.svg);
 }
 .info-card .mastodon a {
@@ -208,17 +219,21 @@ small {
 }
 .info-card .mastodon a:hover {
   background-color: #D8D8FF;
+  transition: all 300px ease-out;
 }
 .info-card .github {
+  padding: 5px 0px 5px 30px;
   background-image: url(/img/icon-github.svg);
 }
 .info-card .link {
   background-image: url(/img/icon-link.svg);
 }
 .info-card .archive-1 {
+  padding: 5px 0px 5px 30px;
   background-image: url(/img/icon-box-1.png);
 }
 .info-card .archive-2 {
+  padding: 5px 0px 5px 30px;
   background-image: url(/img/icon-box-2.png);
 }
 
@@ -274,33 +289,37 @@ small {
   gap: 8px;
   padding-bottom: 24px;
 }
-.tools .icons {
+.tools .app-icons {
   display: flex;
   flex-direction: row;
   gap: 12px;
   align-content: center;
   padding: 0px 4px;
 }
-.tools .icons a {
+.tools .app-icons a {
   position: relative;
   display: flex;
   flex-direction: column;
   width: 24px;
   height: 24px;
 }
-.tools .icons a:hover {
+.tools .app-icons a:hover {
   background-color: white;
 }
-.tools .icons a:hover img.rounded {
+.tools .app-icons a:hover img {
+  transform: translatey(-3px);
+  transition: all 300px ease-out;
+}
+.tools .app-icons a:hover img.rounded {
   border-radius: 4px;
 }
-.tools .icons a:hover p {
+.tools .app-icons a:hover p {
   opacity: 0.8;
 }
-.tools .icons a img.rounded {
+.tools .app-icons a img.rounded {
   border-radius: 4px;
 }
-.tools .icons a p {
+.tools .app-icons a p {
   position: absolute;
   bottom: -20px;
   left: 50%;

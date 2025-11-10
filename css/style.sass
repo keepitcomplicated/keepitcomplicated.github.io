@@ -151,11 +151,10 @@ small
   position: sticky
 
   p
-    padding: 5px 0px
-    line-height: 18px
+    padding: 7px 0px 3px 0px
+    line-height: 19px
 
   h2
-    padding-bottom: 4px
     margin-top: -4px
 
   hr
@@ -166,10 +165,14 @@ small
     float: right
 
   .icon
-    padding-left: 30px
-    background-position: center left
+    padding-left: 32px
+    background-position: 0px 50%
     background-repeat: no-repeat
     background-size: 20px
+    &:hover
+      background-position: 3px 50%
+      transition: all 125ms ease-in-out
+      will-change: all
 
   .profession
     background-image: url(/img/icon-pencil.png)
@@ -183,34 +186,45 @@ small
       text-decoration-color: $color-red
       &:hover
         background-color: #FFD4D4
+        transition: all 300px ease-out
+
+  .work
+    background-image: url(/img/icon-work.png)
 
   .open-to-work
     background-image: url(/img/icon-inbox.png)
 
   .linkedin
+    padding: 5px 0px 5px 30px
     background-image: url(/img/icon-linkedin.svg)
     a
       text-decoration-color: #0A66C2
       &:hover
         background-color: #C2D9F0
+        transition: all 300px ease-out
 
   .mastodon
+    padding: 5px 0px 5px 30px
     background-image: url(/img/icon-mastodon.svg)
     a
       text-decoration-color: #6364FF
       &:hover
         background-color: #D8D8FF
+        transition: all 300px ease-out
 
   .github
+    padding: 5px 0px 5px 30px
     background-image: url(/img/icon-github.svg)
 
   .link
     background-image: url(/img/icon-link.svg)
 
   .archive-1
+    padding: 5px 0px 5px 30px
     background-image: url(/img/icon-box-1.png)
 
   .archive-2
+    padding: 5px 0px 5px 30px
     background-image: url(/img/icon-box-2.png)
 
 .title
@@ -265,7 +279,7 @@ small
   gap: 8px
   padding-bottom: 24px
 
-  .icons
+  .app-icons
     display: flex
     flex-direction: row
     gap: 12px
@@ -279,6 +293,10 @@ small
       height: 24px
       &:hover
         background-color: white
+
+        img
+          transform: translatey(-3px)
+          transition: all 300px ease-out
 
         img.rounded
           border-radius: 4px
