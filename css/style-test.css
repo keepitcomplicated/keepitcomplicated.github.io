@@ -1,0 +1,48 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.viewport-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: green;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.timeline {
+  width: 20000px;
+  height: 1080px;
+  display: flex;
+  flex-direction: row;
+  transform-origin: top center;
+  transform: scale(calc(100vh / 1080));
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.intro {
+  width: 1920px;
+  height: 1080px;
+  background: blue;
+  color: white;
+}
+
+.spacer-320 {
+  width: 320px;
+  height: 1080px;
+  background: red;
+}
+
+.year {
+  width: 2160px;
+  height: 1080px;
+  background: yellow;
+}

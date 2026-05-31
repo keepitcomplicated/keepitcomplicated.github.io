@@ -60,7 +60,6 @@ p, ul
 
 h1, h2, h3, h4, h5, h6
   font-family: $font-sans-serif
-  // text-shadow: -0.5px -0.5px 0.5px #ff00ff, 0.5px -0.5px 0.5px #ffff00, 0.5px 0.5px 0.5px #00ffff
 
 a 
   color: black
@@ -76,7 +75,7 @@ b
 small
   font-size: 12px
 
-// CSS
+// Layout
 
 .background
   height: 100vh
@@ -140,7 +139,12 @@ small
 
 .height-16-9
   height: 461px
+
+.radius-12
   border-radius: 12px
+
+.radius-24
+  border-radius: 24px
 
 .padding
   padding: 24px
@@ -228,11 +232,17 @@ small
     background-image: url(/img/icon-box-2.png)
 
 .title
-  h1
+
+  h1, h2
     font-size: 40px
     line-height: 40px
     padding-bottom: 16px
     margin-top: -6px
+
+  h2
+    font-size: 30px
+    line-height: 32px
+
 
   .company
     display: flex
@@ -244,7 +254,6 @@ small
       font-size: 16px
       font-weight: 500
       line-height: 24px
-
 
   .role
     position: absolute
@@ -356,7 +365,7 @@ small
     will-change: all
 
 .all-stars-info:has(.illustrator:hover)
-  .art-direction, .branding, .icon-design
+  .art-direction, .branding
     color: white
     background-color: black
     transition: all 250ms
@@ -377,7 +386,7 @@ small
     will-change: all
 
 .all-stars-info:has(.unity:hover)
-  .ui, .tech-art
+  .ui
     color: white
     background-color: black
     transition: all 250ms
