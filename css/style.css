@@ -689,7 +689,7 @@ small {
   .info-card {
     top: 0px;
     position: relative;
-    margin-bottom: 0px;
+    margin-bottom: 40px;
   }
   .grid {
     width: 390px;
