@@ -247,7 +247,7 @@ small {
 .title h1, .title h2 {
   font-size: 40px;
   line-height: 40px;
-  padding-bottom: 16px;
+  padding-bottom: 12px;
   margin-top: -6px;
 }
 .title h2 {
@@ -371,6 +371,27 @@ small {
   font-weight: 700;
   text-transform: uppercase;
   padding: 0px;
+}
+
+.attribute {
+  padding: 14px 0px 14px 32px;
+  background: url(/img/metall.png) center left no-repeat;
+  background-size: 24px;
+}
+.attribute:hover {
+  background-position: 3px 50%;
+  transition: all 125ms ease-in-out;
+  will-change: all;
+}
+.attribute p {
+  color: #999;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: none;
+}
+.attribute p a {
+  font-weight: 700;
 }
 
 .all-stars-info:has(.figma:hover) .product-design, .all-stars-info:has(.figma:hover) .ui, .all-stars-info:has(.figma:hover) .ux, .all-stars-info:has(.figma:hover) .design-system, .all-stars-info:has(.figma:hover) .prototyping {

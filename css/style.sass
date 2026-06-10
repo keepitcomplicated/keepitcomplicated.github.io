@@ -236,7 +236,7 @@ small
   h1, h2
     font-size: 40px
     line-height: 40px
-    padding-bottom: 16px
+    padding-bottom: 12px
     margin-top: -6px
 
   h2
@@ -348,7 +348,6 @@ small
       width: max-content
 
 .responsibilities, .tools
-
   p
     color: $color-gray-300
     font-family: $font-sans-serif
@@ -356,6 +355,23 @@ small
     font-weight: 700
     text-transform: uppercase
     padding: 0px
+
+.attribute
+  padding: 14px 0px 14px 32px
+  background: url(/img/metall.png) center left no-repeat
+  background-size: 24px
+  &:hover
+    background-position: 3px 50%
+    transition: all 125ms ease-in-out
+    will-change: all
+  p
+    color: $color-gray-300
+    font-family: $font-sans-serif
+    font-size: 12px
+    font-weight: 500
+    text-transform: none
+    a
+      font-weight: 700
 
 .all-stars-info:has(.figma:hover)
   .product-design, .ui, .ux, .design-system, .prototyping
